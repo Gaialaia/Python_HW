@@ -1,7 +1,5 @@
 #task 22
 
-#task 22
-
 setonelength = int(input('enter setone length   '))
 setone = {input(i ) for i in range(setonelength)}
 settwolength = int(input('enter settwo length   '))
