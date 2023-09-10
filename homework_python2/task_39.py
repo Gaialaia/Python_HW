@@ -11,8 +11,8 @@
 # пара-ра-рам рам-пам-папам па-ра-па-дам Парам пам-пам
 
 a = input("enter phrase 1  ")
-b = input("enter phrase 2   ")
-c = input("enter phrase 3   ")
+b = input("enter phrase 2  ")
+c = input("enter phrase 3  ")
 def count_vowels(phrase):
   return sum([1 for x in phrase if x in 'а, е, ё, и, о, у, ы, э, ю, я'])
 
