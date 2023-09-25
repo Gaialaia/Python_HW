@@ -34,12 +34,10 @@ def delete_by_lastname(phone_book,lastname):
     return list(filter(lambda x: x['Фамилия'] != lastname, phone_book))
 
 def find_by_number(phone_book,number):
-    filtered = list(filter(lambda x: x ['Телефон'] == number, phone_book))
-    # return list(map(lambda x : x['Фамилия'] + ['Телефон'] + x['Имя'], filtered))
-    return list(map(lambda x : x['Телефон'] + ['Фамилия'] + x ['Имя'], filtered))
+    if number == ['Телефон']:
+        return list(map(lambda x : x['Фамилия'] + ['Телефон'] + x['Имя']))
 
-
-
+        
 def add_user(phone_book):
     
     newuser = {}
